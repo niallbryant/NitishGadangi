@@ -12,13 +12,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ShowPatient">
+        <activity android:name=".DonorForm">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ShowDonor"></activity>
+        <activity android:name=".ShowPatient">
+        </activity>
+        <activity android:name=".ShowDonor" />
         <activity android:name=".PatientList" />
         <activity android:name=".DonorsList" />
         <activity android:name=".MainActivity" />
