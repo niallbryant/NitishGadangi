@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DonorForm">
+    tools:context=".PatientForm">
 
     <TextView
         android:id="@+id/textView12"
@@ -13,7 +13,7 @@
         android:layout_height="60dp"
         android:background="@color/A400red"
         android:gravity="center"
-        android:text="Donor Form"
+        android:text="Patient Form"
         android:textColor="@color/colorWhite"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -198,8 +198,8 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="20dp"
                 app:helperTextColor="@color/colorGrey"
-                app:iconSignifier="@drawable/ic_location_on_black_24dp"
-                app:labelText="Location"
+                app:iconSignifier="@drawable/ic_local_hospital_black_24dp"
+                app:labelText="Hospital Name"
                 app:primaryColor="@color/colorGreenActive"
                 app:useDenseSpacing="true">
 
@@ -214,21 +214,6 @@
                     android:textStyle="bold" />
             </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
 
-            <TextView
-                android:id="@+id/textView23"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="8dp"
-                android:background="@color/A400red"
-                android:padding="4dp"
-                android:text="Health Info"
-                android:textAlignment="center"
-                android:textColor="@color/colorWhite"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
             <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
                 android:id="@+id/text_fieldbxd_bofxes3"
                 android:layout_width="match_parent"
@@ -237,10 +222,9 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="20dp"
                 app:helperTextColor="@color/colorGrey"
-                app:iconSignifier="@drawable/ic_date_range_black_24dp"
-                app:labelText="Date Recovered"
+                app:iconSignifier="@drawable/ic_location_on_black_24dp"
+                app:labelText="Location"
                 app:primaryColor="@color/colorGreenActive"
-                app:helperText="dd mm yyyy"
                 app:useDenseSpacing="true">
 
                 <studio.carbonylgroup.textfieldboxes.ExtendedEditText
@@ -276,200 +260,6 @@
                     android:singleLine="true"
                     android:textStyle="bold" />
             </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="20dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView17"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Do you have Diabetes ?"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:weightSum="3">
-
-                    <RadioButton
-                        android:id="@+id/radioButton"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Yes" />
-
-                    <RadioButton
-                        android:id="@+id/radioButton2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="No" />
-
-                </RadioGroup>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="20dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textViedw17"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Do you have Liver disease ?"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:weightSum="3">
-
-                    <RadioButton
-                        android:id="@+id/radiodButton"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Yes" />
-
-                    <RadioButton
-                        android:id="@+id/radioBdutton2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="No" />
-
-                </RadioGroup>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="20dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textdView17"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Do you have Kidney disease ?"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:weightSum="3">
-
-                    <RadioButton
-                        android:id="@+id/radiodButston"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Yes" />
-
-                    <RadioButton
-                        android:id="@+id/radioButston2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="No" />
-
-                </RadioGroup>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="20dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textViaew17"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Do you have Lung disease ?"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:weightSum="3">
-
-                    <RadioButton
-                        android:id="@+id/radioButtson"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Yes" />
-
-                    <RadioButton
-                        android:id="@+id/radioButtonf2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="No" />
-
-                </RadioGroup>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="20dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textfView17"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Do you have Blood Pressure problem ?"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:weightSum="3">
-
-                    <RadioButton
-                        android:id="@+id/radioButtoan"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Yes" />
-
-                    <RadioButton
-                        android:id="@+id/radioButtodn2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="No" />
-                </RadioGroup>
-            </LinearLayout>
 
             <CheckBox
                 android:id="@+id/checkBox"
