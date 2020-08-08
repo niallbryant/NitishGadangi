@@ -45,19 +45,6 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView18"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="20dp"
-                android:text="Contact Info"
-                android:textAlignment="center"
-                android:textColor="@color/blckSpl"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
             <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
                 android:id="@+id/text_field_boxes3"
                 android:layout_width="match_parent"
@@ -231,14 +218,41 @@
                 android:id="@+id/textView23"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/A400red"
+                android:padding="4dp"
+                android:text="Health Info"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+                android:id="@+id/text_fieldbxd_bofxes3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="20dp"
-                android:text="Health Info"
-                android:textAlignment="center"
-                android:textColor="@color/blckSpl"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                app:helperTextColor="@color/colorGrey"
+                app:iconSignifier="@drawable/ic_date_range_black_24dp"
+                app:labelText="Date Recovered"
+                app:primaryColor="@color/colorGreenActive"
+                app:helperText="dd mm yyyy"
+                app:useDenseSpacing="true">
+
+                <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                    android:id="@+id/emnbxdadil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textStyle="bold" />
+            </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
 
             <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
                 android:id="@+id/text_fielddd_boxes3"
