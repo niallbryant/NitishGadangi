@@ -52,6 +52,8 @@ App is build on Android Studio Using Native Android SDK
 
 **[Alerter](https://github.com/Tapadoo/Alerter)** - For Material Style Alerts
 
+**[UiPath](https://www.uipath.com/)** - For Automated Web Scraping of Required Info
+
 ## How to Edit Files
 
 * Download [Android Studio](https://developer.android.com/studio)
