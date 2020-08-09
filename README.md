@@ -27,11 +27,9 @@ This way by establishing a common platform to find a Plasma Donor. We sincerely 
 **Every Donor is a Life Savior. So Donate Blood, Save Lives!**
 
 ## Screenshots
-![]()
+![](https://github.com/HAC-2020/NitishGadangi/blob/master/screenshots/ss1.jpg?raw=true)
 
-![]()
-
-![]()
+![](https://github.com/HAC-2020/NitishGadangi/blob/master/screenshots/ss2.jpg?raw=true)
 
 ## Want to try the app?
 #### [Please Watch the Demo Video on Youtube](https://www.youtube.com/watch?v=ciT8U4ZkG1M&feature=youtu.be)
@@ -48,11 +46,13 @@ App is build on Android Studio Using Native Android SDK
 
 **[Okhttp](https://square.github.io/okhttp/)** - as android Http Client
 
-**[FireBase](https://firebase.google.com/)** - As backend Database for storing information about various shops
+**[FireBase](https://firebase.google.com/)** - As backend Database for storing information about various donors and patients
 
 **[OneSignal](https://onesignal.com/)** - Easy Firebase Notifications
 
 **[Alerter](https://github.com/Tapadoo/Alerter)** - For Material Style Alerts
+
+**[UiPath](https://www.uipath.com/)** - For Automated Web Scraping of Required Info
 
 ## How to Edit Files
 
