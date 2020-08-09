@@ -46,7 +46,7 @@ App is build on Android Studio Using Native Android SDK
 
 **[Okhttp](https://square.github.io/okhttp/)** - as android Http Client
 
-**[FireBase](https://firebase.google.com/)** - As backend Database for storing information about various shops
+**[FireBase](https://firebase.google.com/)** - As backend Database for storing information about various donors and patients
 
 **[OneSignal](https://onesignal.com/)** - Easy Firebase Notifications
 
