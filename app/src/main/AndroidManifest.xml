@@ -17,14 +17,14 @@
         <activity android:name=".DonorForm" />
         <activity android:name=".ShowPatient" />
         <activity android:name=".ShowDonor" />
-        <activity android:name=".PatientList">
+        <activity android:name=".PatientList"></activity>
+        <activity android:name=".DonorsList"></activity>
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DonorsList"></activity>
-        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
