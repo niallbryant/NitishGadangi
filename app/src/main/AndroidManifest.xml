@@ -12,18 +12,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Faqs">
+        <activity android:name=".Faqs"></activity>
+        <activity android:name=".PatientForm"></activity>
+        <activity android:name=".DonorForm" />
+        <activity android:name=".ShowPatient" />
+        <activity android:name=".ShowDonor" />
+        <activity android:name=".PatientList">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PatientForm"></activity>
-        <activity android:name=".DonorForm" />
-        <activity android:name=".ShowPatient" />
-        <activity android:name=".ShowDonor" />
-        <activity android:name=".PatientList" />
-        <activity android:name=".DonorsList" />
+        <activity android:name=".DonorsList"></activity>
         <activity android:name=".MainActivity" />
     </application>
 
