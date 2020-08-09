@@ -6,46 +6,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
-        android:id="@+id/text_fielddd_boxes3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        app:helperTextColor="@color/colorGrey"
-        app:labelText="Search for Blood Group, Location, Age . . ."
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:primaryColor="@color/colorGreenActive"
-        app:useDenseSpacing="true">
-
-        <studio.carbonylgroup.textfieldboxes.ExtendedEditText
-            android:id="@+id/esmadsil"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableStart="@drawable/ic_search_black_24dp"
-            android:drawablePadding="8dp"
-            android:imeOptions="actionNext"
-            android:lines="1"
-            android:maxLines="1"
-            android:singleLine="true"
-            android:textStyle="bold" />
-    </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
-
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_fielddd_boxes3">
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
+
+            <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+                android:id="@+id/text_fielddd_boxes3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:helperTextColor="@color/colorGrey"
+                app:labelText="Search for Blood Group, Location, Age . . ."
+                app:primaryColor="@color/colorGreenActive"
+                app:useDenseSpacing="true">
+
+                <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                    android:id="@+id/esmadsil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_search_black_24dp"
+                    android:drawablePadding="8dp"
+                    android:imeOptions="actionNext"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textStyle="bold" />
+            </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView2_card1"
@@ -98,7 +95,7 @@
                             android:layout_weight="1"
                             android:background="@color/A400red"
                             android:padding="4dp"
-                            android:text="B+"
+                            android:text="AB-"
                             android:textAlignment="center"
                             android:textColor="@color/colorWhite"
                             android:textSize="16sp"
@@ -128,7 +125,7 @@
                             android:layout_weight="1"
                             android:background="@color/colorPinkPending"
                             android:padding="4dp"
-                            android:text="18yrs"
+                            android:text="22yrs"
                             android:textAlignment="center"
                             android:textColor="@color/colorWhite"
                             android:textSize="16sp"
@@ -145,7 +142,7 @@
                         android:background="@color/colorVioletTotl"
                         android:paddingTop="4dp"
                         android:paddingBottom="4dp"
-                        android:text="Recovered on: 18 Jul 2020"
+                        android:text="Recovered on: 28 Jul 2020"
                         android:textAlignment="center"
                         android:textColor="@color/colorWhite"
                         android:textSize="16sp"
@@ -162,7 +159,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="16dp"
                         android:gravity="center_vertical"
-                        android:text="Kukatpally, Hyderabad, Telanagana"
+                        android:text="Nizampet, Hyderabad, Telanagana"
                         android:textSize="18sp"
                         android:textStyle="bold"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -177,7 +174,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="16dp"
                         android:gravity="center_vertical"
-                        android:text="John Doe"
+                        android:text="Rajesh"
                         android:textSize="18sp"
                         android:textStyle="bold"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -202,6 +199,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="20dp"
                         android:layout_marginBottom="16dp"
+                        android:onClick="showDonor"
                         android:paddingLeft="20dp"
                         android:paddingTop="4dp"
                         android:paddingRight="20dp"
@@ -244,6 +242,7 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView2_card2"
                 android:layout_width="match_parent"
@@ -325,7 +324,7 @@
                             android:layout_weight="1"
                             android:background="@color/colorPinkPending"
                             android:padding="4dp"
-                            android:text="18yrs"
+                            android:text="26yrs"
                             android:textAlignment="center"
                             android:textColor="@color/colorWhite"
                             android:textSize="16sp"
@@ -399,6 +398,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="20dp"
                         android:layout_marginBottom="16dp"
+                        android:onClick="showDonor"
                         android:paddingLeft="20dp"
                         android:paddingTop="4dp"
                         android:paddingRight="20dp"
@@ -441,6 +441,7 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView2_card3"
                 android:layout_width="match_parent"
@@ -477,7 +478,7 @@
                             android:layout_weight="1"
                             android:background="@android:color/holo_orange_light"
                             android:padding="4dp"
-                            android:text="2.0 KMs"
+                            android:text="1600 KMs"
                             android:textAlignment="center"
                             android:textColor="@color/colorWhite"
                             android:textSize="16sp"
@@ -492,7 +493,7 @@
                             android:layout_weight="1"
                             android:background="@color/A400red"
                             android:padding="4dp"
-                            android:text="B+"
+                            android:text="O+"
                             android:textAlignment="center"
                             android:textColor="@color/colorWhite"
                             android:textSize="16sp"
@@ -507,7 +508,7 @@
                             android:layout_weight="1"
                             android:background="@color/colorBlueFinished"
                             android:padding="4dp"
-                            android:text="Male"
+                            android:text="Female"
                             android:textAlignment="center"
                             android:textColor="@color/colorWhite"
                             android:textSize="16sp"
@@ -539,7 +540,7 @@
                         android:background="@color/colorVioletTotl"
                         android:paddingTop="4dp"
                         android:paddingBottom="4dp"
-                        android:text="Recovered on: 18 Jul 2020"
+                        android:text="Recovered on: 10 Jul 2020"
                         android:textAlignment="center"
                         android:textColor="@color/colorWhite"
                         android:textSize="16sp"
@@ -556,7 +557,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="16dp"
                         android:gravity="center_vertical"
-                        android:text="Kukatpally, Hyderabad, Telanagana"
+                        android:text="Bank Street, Navi Mumbai"
                         android:textSize="18sp"
                         android:textStyle="bold"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -571,7 +572,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="16dp"
                         android:gravity="center_vertical"
-                        android:text="John Doe"
+                        android:text="Kiranmayee"
                         android:textSize="18sp"
                         android:textStyle="bold"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -596,6 +597,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="20dp"
                         android:layout_marginBottom="16dp"
+                        android:onClick="showDonor"
                         android:paddingLeft="20dp"
                         android:paddingTop="4dp"
                         android:paddingRight="20dp"
@@ -638,6 +640,7 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView2_card4"
                 android:layout_width="match_parent"
@@ -793,6 +796,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="20dp"
                         android:layout_marginBottom="16dp"
+                        android:onClick="showDonor"
                         android:paddingLeft="20dp"
                         android:paddingTop="4dp"
                         android:paddingRight="20dp"
@@ -992,6 +996,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="20dp"
                         android:layout_marginBottom="16dp"
+                        android:onClick="showDonor"
                         android:paddingLeft="20dp"
                         android:paddingTop="4dp"
                         android:paddingRight="20dp"

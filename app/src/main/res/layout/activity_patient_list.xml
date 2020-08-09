@@ -5,33 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
-        android:id="@+id/text_fielddd_boxes3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        app:helperTextColor="@color/colorGrey"
-        app:labelText="Search for Blood Group, Location, Age . . ."
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:primaryColor="@color/colorGreenActive"
-        app:useDenseSpacing="true">
-
-        <studio.carbonylgroup.textfieldboxes.ExtendedEditText
-            android:id="@+id/esmadsil"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableStart="@drawable/ic_search_black_24dp"
-            android:drawablePadding="8dp"
-            android:imeOptions="actionNext"
-            android:lines="1"
-            android:maxLines="1"
-            android:singleLine="true"
-            android:textStyle="bold" />
-    </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
 
 
     <ScrollView
@@ -40,12 +13,37 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_fielddd_boxes3">
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
+            <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+                android:id="@+id/text_fielddd_boxes3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:helperTextColor="@color/colorGrey"
+                app:labelText="Search for Blood Group, Location, Age . . ."
+                app:primaryColor="@color/colorGreenActive"
+                app:useDenseSpacing="true">
+
+                <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                    android:id="@+id/esmadsil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_search_black_24dp"
+                    android:drawablePadding="8dp"
+                    android:imeOptions="actionNext"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textStyle="bold" />
+            </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -97,7 +95,7 @@
                             android:layout_weight="1"
                             android:background="@color/A400red"
                             android:padding="4dp"
-                            android:text="B+"
+                            android:text="AB+"
                             android:textAlignment="center"
                             android:textColor="@color/colorWhite"
                             android:textSize="16sp"
@@ -127,7 +125,7 @@
                             android:layout_weight="1"
                             android:background="@color/colorPinkPending"
                             android:padding="4dp"
-                            android:text="18yrs"
+                            android:text="38yrs"
                             android:textAlignment="center"
                             android:textColor="@color/colorWhite"
                             android:textSize="16sp"
@@ -141,7 +139,7 @@
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="16dp"
-                        android:text="John Doe"
+                        android:text="Ravi"
                         android:textAlignment="textStart"
                         android:textColor="@color/blckSpl"
                         android:textSize="18sp"
@@ -200,6 +198,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="20dp"
                         android:layout_marginBottom="16dp"
+                        android:onClick="showPatient"
                         android:paddingLeft="20dp"
                         android:paddingTop="4dp"
                         android:paddingRight="20dp"
@@ -331,7 +330,7 @@
                             android:layout_weight="1"
                             android:background="@color/colorPinkPending"
                             android:padding="4dp"
-                            android:text="18yrs"
+                            android:text="36yrs"
                             android:textAlignment="center"
                             android:textColor="@color/colorWhite"
                             android:textSize="16sp"
@@ -345,7 +344,7 @@
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="16dp"
-                        android:text="John Doe"
+                        android:text="Naresh"
                         android:textAlignment="textStart"
                         android:textColor="@color/blckSpl"
                         android:textSize="18sp"
@@ -404,6 +403,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="20dp"
                         android:layout_marginBottom="16dp"
+                        android:onClick="showPatient"
                         android:paddingLeft="20dp"
                         android:paddingTop="4dp"
                         android:paddingRight="20dp"
@@ -505,7 +505,7 @@
                             android:layout_weight="1"
                             android:background="@color/A400red"
                             android:padding="4dp"
-                            android:text="B+"
+                            android:text="B-"
                             android:textAlignment="center"
                             android:textColor="@color/colorWhite"
                             android:textSize="16sp"
@@ -520,7 +520,7 @@
                             android:layout_weight="1"
                             android:background="@color/colorBlueFinished"
                             android:padding="4dp"
-                            android:text="Male"
+                            android:text="Female"
                             android:textAlignment="center"
                             android:textColor="@color/colorWhite"
                             android:textSize="16sp"
@@ -535,7 +535,7 @@
                             android:layout_weight="1"
                             android:background="@color/colorPinkPending"
                             android:padding="4dp"
-                            android:text="18yrs"
+                            android:text="39yrs"
                             android:textAlignment="center"
                             android:textColor="@color/colorWhite"
                             android:textSize="16sp"
@@ -549,7 +549,7 @@
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="16dp"
-                        android:text="John Doe"
+                        android:text="Reshmi"
                         android:textAlignment="textStart"
                         android:textColor="@color/blckSpl"
                         android:textSize="18sp"
@@ -566,7 +566,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="16dp"
                         android:gravity="center_vertical"
-                        android:text="Kukatpally, Hyderabad, Telanagana"
+                        android:text="RTC Road, Hyderabad, Telanagana"
                         android:textColor="@color/blckSpl"
                         android:textSize="18sp"
                         android:textStyle="bold"
@@ -582,7 +582,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="16dp"
                         android:gravity="center_vertical"
-                        android:text="Rajiv Gandhi Hospital"
+                        android:text="Osmania Hospital"
                         android:textColor="@color/blckSpl"
                         android:textSize="18sp"
                         android:textStyle="bold"
@@ -608,6 +608,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="20dp"
                         android:layout_marginBottom="16dp"
+                        android:onClick="showPatient"
                         android:paddingLeft="20dp"
                         android:paddingTop="4dp"
                         android:paddingRight="20dp"
@@ -812,6 +813,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="20dp"
                         android:layout_marginBottom="16dp"
+                        android:onClick="showPatient"
                         android:paddingLeft="20dp"
                         android:paddingTop="4dp"
                         android:paddingRight="20dp"
@@ -1017,6 +1019,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="20dp"
                         android:layout_marginBottom="16dp"
+                        android:onClick="showPatient"
                         android:paddingLeft="20dp"
                         android:paddingTop="4dp"
                         android:paddingRight="20dp"
