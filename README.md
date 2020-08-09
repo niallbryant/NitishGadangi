@@ -27,11 +27,11 @@ This way by establishing a common platform to find a Plasma Donor. We sincerely 
 **Every Donor is a Life Savior. So Donate Blood, Save Lives!**
 
 ## Screenshots
-![](https://github.com/NitishGadangi/ShopSafe-App/blob/master/screenshots/screenshots1.jpg?raw=true)
+![]()
 
-![](https://github.com/NitishGadangi/ShopSafe-App/blob/master/screenshots/screenshots2.jpg?raw=true)
+![]()
 
-![](https://github.com/NitishGadangi/ShopSafe-App/blob/master/screenshots/screenshots3.jpg?raw=true)
+![]()
 
 ## Want to try the app?
 #### [Please Watch the Demo Video on Youtube](https://www.youtube.com/watch?v=ciT8U4ZkG1M&feature=youtu.be)
