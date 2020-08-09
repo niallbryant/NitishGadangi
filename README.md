@@ -10,7 +10,7 @@
   </a>
 </p>
 
-> **Thanks to Team Hack and Judges for coming up with this hackathon and providing us a platform to exibit our skills**
+> **Thanks to Team HAC and Judges for coming up with this hackathon and providing us a platform to exibit our skills**
 
 ### A Community-driven platform which fills the gap between the Plasma Donors and Patients who are in requirement of plasma.
 
